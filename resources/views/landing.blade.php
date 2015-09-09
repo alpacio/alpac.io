@@ -31,11 +31,45 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                z-index: -1;
+            }
+            #shadow,
+            #background {
+                position: absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                overflow:hidden;
+            }
+
+            #shadow {
+                background: -moz-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.1) 0%, rgba(0,0,0,0.3) 100%); /* FF3.6+ */
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(125,126,125,0.1)), color-stop(100%,rgba(0,0,0,0.3))); /* Chrome,Safari4+ */
+                background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.1) 0%,rgba(0,0,0,0.3) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.1) 0%,rgba(0,0,0,0.3) 100%); /* Opera 12+ */
+                background: -ms-radial-gradient(center, ellipse cover,  rgba(125,126,125,0.1) 0%,rgba(0,0,0,0.3) 100%); /* IE10+ */
+                background: radial-gradient(ellipse at center,  rgba(125,126,125,0.1) 0%,rgba(0,0,0,0.3) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a7d7e7d', endColorstr='#4d000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            }
+
+            #background {
+                -webkit-animation: colors 30s infinite;
+            }
+
+            @-webkit-keyframes colors {
+                0%   { background: #4bb4ff; }
+                20%  { background: #be70ff; }
+                40%  { background: #ff9722; }
+                60%  { background: #fbff53; }
+                80%  { background: #9dff41; }
+                100% { background: #4bb4ff; }
             }
         </style>
     </head>
     <body>
+        <div id="background"></div>
+        <div id="lines"></div>
+        <div id="shadow"></div>
         <div class="cc">
             <svg version="1.1" id="alpacio_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="1870.61px" height="1592.878px" viewBox="0 0 1870.61 1592.878" enable-background="new 0 0 1870.61 1592.878"
@@ -106,7 +140,6 @@
                 </g>
             </svg>
         </div>
-        <div id="lines"></div>
         <!-- Import SnapSVG for our logo -->
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>-->
         <script>
