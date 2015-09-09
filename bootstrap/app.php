@@ -1,10 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\App;
-
 require_once __DIR__.'/../vendor/autoload.php';
 
-if (!App::environment('travis')) {
+if (!$app->environment('travis')) {
     Dotenv::load(__DIR__.'/../');
 }
 
