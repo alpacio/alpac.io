@@ -2,10 +2,6 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-if (!$app->environment('travis')) {
-    Dotenv::load(__DIR__.'/../');
-}
-
 /*
 |--------------------------------------------------------------------------
 | Create The Application
@@ -20,6 +16,10 @@ if (!$app->environment('travis')) {
 $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
+
+if (!$app->environment('travis')) {
+    Dotenv::load(__DIR__.'/../');
+}
 
 // $app->withFacades();
 
