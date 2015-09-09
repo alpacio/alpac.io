@@ -5,6 +5,8 @@
         <title>alpac.io</title>
         <style>
             body {
+                width: 100%;
+                height: 100%;
                 background-color: #0ab49b;
             }
             #alpacio_logo {
@@ -18,6 +20,18 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+            #lines {
+                background-size: 50px 50px;
+                background: repeating-linear-gradient(0deg, #FFF, #FFF 1px, transparent 1px, transparent 50px),
+                            repeating-linear-gradient(-90deg, #FFF, #FFF 1px, transparent 1px, transparent 50px) center center;
+                height: 100%;
+                width: 100%;
+                opacity: 0.1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
             }
         </style>
     </head>
@@ -90,9 +104,9 @@
                         c28.17,0,51.554,9.688,71.487,29.612c19.923,19.935,29.608,43.316,29.608,71.483c0,28.16-9.678,51.495-29.592,71.339
                         C1775.793,1451.341,1752.409,1460.992,1724.228,1460.992z"/>
                 </g>
-                </svg>
-
+            </svg>
         </div>
+        <div id="lines"></div>
         <!-- Import SnapSVG for our logo -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
     </body>
