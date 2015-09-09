@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>{{ ENV('APP_NAME', '') }}</title>
+        <title>{{ trans('application.name') }}</title>
         <style>
             body {
                 width: 100%;
@@ -115,7 +115,7 @@
                     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', '{{ ENV('GA_TRACKING', '') }}', 'auto');
+            ga('create', '{{ ENV('GA_TRACKING') }}', 'auto');
             ga('send', 'pageview');
 
         </script>
