@@ -1,0 +1,8 @@
+{
+  "commands": [
+    "composer install"
+  ],
+  "storage": {
+    "storage": 777
+  }
+}
