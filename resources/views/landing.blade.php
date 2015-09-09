@@ -22,9 +22,9 @@
                 transform: translate(-50%, -50%);
             }
             #lines {
-                background-size: 50px 50px;
-                background: repeating-linear-gradient(0deg, #FFF, #FFF 1px, transparent 1px, transparent 50px),
-                            repeating-linear-gradient(-90deg, #FFF, #FFF 1px, transparent 1px, transparent 50px) center center;
+                background-size: 3vw 3vw;
+                background: repeating-linear-gradient(0deg, #FFF, #FFF 1px, transparent 1px, transparent 3vw),
+                            repeating-linear-gradient(-90deg, #FFF, #FFF 1px, transparent 1px, transparent 3vw) center center;
                 height: 100%;
                 width: 100%;
                 opacity: 0.1;
