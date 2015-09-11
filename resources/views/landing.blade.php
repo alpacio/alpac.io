@@ -71,8 +71,7 @@
         <div id="lines"></div>
         <div id="shadow"></div>
         <div class="cc">
-            <svg version="1.1" id="alpacio_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="1870.61px" height="1592.878px" viewBox="0 0 1870.61 1592.878" enable-background="new 0 0 1870.61 1592.878"
+            <svg version="1.1" id="alpacio_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1870.61 1592.878" enable-background="new 0 0 1870.61 1592.878"
                  xml:space="preserve">
                 <g>
                     <path d="M774.885,295.589c17.932,0,32.455,14.533,32.455,32.463c0,17.922-14.523,32.459-32.455,32.459
