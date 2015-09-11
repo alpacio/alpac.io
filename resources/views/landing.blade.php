@@ -7,6 +7,8 @@
             body {
                 width: 100vw;
                 height: 100vh;
+                margin: 0;
+                padding: 0;
             }
             #alpacio_logo {
                 width: 50vw;
@@ -24,8 +26,8 @@
                 background-size: 3vw 3vw;
                 background: repeating-linear-gradient(0deg, #FFF, #FFF 1px, transparent 1px, transparent 3vw),
                             repeating-linear-gradient(-90deg, #FFF, #FFF 1px, transparent 1px, transparent 3vw) center center;
-                height: 100%;
-                width: 100%;
+                width: 100vw;
+                height: 100vh;
                 opacity: 0.1;
                 position: absolute;
                 top: 0;
