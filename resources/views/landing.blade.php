@@ -12,6 +12,8 @@
             }
             #alpacio_logo {
                 width: 50vw;
+                max-width: 75vw;
+                max-height: 75vh;
             }
             #alpacio_logo path {
                 fill: #FFF;
@@ -35,6 +37,8 @@
             }
             #shadow,
             #background {
+                width: 100vw;
+                height: 100vh;
                 position: absolute;
                 top:0;
                 bottom:0;
