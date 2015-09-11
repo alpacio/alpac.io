@@ -21,6 +21,10 @@ if (!$app->environment('travis')) {
     Dotenv::load(__DIR__.'/../');
 }
 
+if ($app->environment('production')) {
+    Dotenv::load(__DIR__.'/../');
+}
+
 // $app->withFacades();
 
 // $app->withEloquent();
